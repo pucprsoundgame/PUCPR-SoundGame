@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - TilemapStatic
+  - Player
+  - Bullet
   - 
   - 
   - 
