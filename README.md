@@ -1,6 +1,8 @@
 # Custom Sounds Game
 Jogo para estudo de sonorização. Os arquivos de som do jogo ficam em uma pasta exposta para modificação do usuário.
 
+## [Baixe o jogo aqui.](https://github.com/Chrisdbhr/CustomSoundGame/blob/master/Game.zip)
+
 ## Instruções
 - Baixe o repositorio, descompacte, e pegue a pasta **Game**.
 - Substitua os arquivos de som da pasta **StreamingAssets** com os que você fizer.
