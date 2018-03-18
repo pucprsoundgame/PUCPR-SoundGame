@@ -19,7 +19,10 @@ public class PlayerController2D : MonoBehaviour
 	[SerializeField] private GameObject _bulletPrefab;
 	[SerializeField] private Transform _bulletSpawn;
 
-	
+	[SerializeField] private AudioSource _jumpAudioSource;
+	[SerializeField] private AudioSource _landAudioSource;
+
+
 	// Use this for initialization
 	void Start()
     {
@@ -170,4 +173,13 @@ public class PlayerController2D : MonoBehaviour
 		}
 
 	}
+
+	public void PlayJumpSound()
+	{
+		if (_jumpAudioSource != null && _jumpAudioSource.clip != null)
+		{
+			_jumpAudioSource.Play();
+		}
+	}
+
 }

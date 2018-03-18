@@ -6,7 +6,7 @@ using UnityEngine;
 public class StreamedSound : MonoBehaviour
 {
 
-	[SerializeField] private string _soundName;
+	public string _soundName;
 	private AudioSource _audioSource;
 
 	private void Start()
@@ -25,7 +25,17 @@ public class StreamedSound : MonoBehaviour
 
 	private IEnumerator LoadSound(string path)
 	{
-		WWW www = new WWW("file://" + path + ".ogg");
+
+		string filePath = "file://" + path + ".ogg";
+
+		// Stop if file doesn't exists.
+		if (!File.Exists(path + ".ogg"))
+		{
+			Debug.Log("File at path: " + path + " does not exist.");
+			yield break;
+		}
+
+		WWW www = new WWW(filePath);
 
 		AudioClip myAudioClip = www.GetAudioClip();
 		while (myAudioClip.loadState != AudioDataLoadState.Loaded)
@@ -39,7 +49,11 @@ public class StreamedSound : MonoBehaviour
 		}
 
 		_audioSource.clip = myAudioClip;
-		_audioSource.Play();
+
+		if (_audioSource.playOnAwake && _audioSource.enabled)
+		{
+			_audioSource.Play();
+		}
 	}
 
 }

@@ -2,7 +2,8 @@
 using UnityEngine;
 
 
-public class Bullet : MonoBehaviour { 
+public class Bullet : MonoBehaviour
+{
 
 	[SerializeField] private float _speed = 1f;
 	private float _damage = 10f;
@@ -13,7 +14,7 @@ public class Bullet : MonoBehaviour {
 
 	[SerializeField] private LayerMask _layerMask;
 
-	private WaitForSeconds _wait;
+	private float _timeToDestroyBullet = 3f;
 
 	[SerializeField] private GameObject _hitObj;
 
@@ -22,7 +23,6 @@ public class Bullet : MonoBehaviour {
 
 	private void Start()
 	{
-		_wait = new WaitForSeconds(0.1f);
 		if (transform.localScale.x > 0)
 		{
 			_direction = 1;
@@ -32,34 +32,35 @@ public class Bullet : MonoBehaviour {
 			_direction = -1;
 		}
 	}
-	
 
 	private void Update()
 	{
+		if (_colided)
+		{
+			return;
+		}
 
 		_raycastHit2d = Physics2D.Raycast(transform.position, Vector2.right * _direction, _speed * Time.deltaTime, _layerMask);
 
-		if (!_colided)
+		transform.Translate((Vector3)(Vector2.right * _direction) * _speed * Time.deltaTime);
+
+		if (_raycastHit2d.transform != null)
 		{
-			if (_raycastHit2d.transform != null)
-			{
-				_colided = true;
-				_raycastHit2d.transform.SendMessage("TakeDamage", _damage, SendMessageOptions.DontRequireReceiver);
-				StartCoroutine(DestroyEffect());
-			}
-			else
-			{
-				transform.Translate((Vector3)(Vector2.right * _direction) * _speed * Time.deltaTime);
-			}
+			_colided = true;
+			_raycastHit2d.transform.SendMessage("TakeDamage", _damage, SendMessageOptions.DontRequireReceiver);
+			DestroyEffect();
 		}
+		
 
 	}
 
-	private IEnumerator DestroyEffect()
+	private void DestroyEffect()
 	{
 		_hitObj.SetActive(true);
-		yield return _wait;
+		_hitObj.transform.parent = null;
+
 		Destroy(gameObject);
+		Destroy(_hitObj, _timeToDestroyBullet);
 	}
 
 }

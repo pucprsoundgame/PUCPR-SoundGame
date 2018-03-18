@@ -148,7 +148,7 @@ public class FootstepsDatabase : MonoBehaviour {
 	public void PlayFootstepOfTile(string tileName)
 	{
 		tileName = RemovePrefixes(tileName).Split('.')[0];
-		Debug.Log("tileName: " + tileName);
+		//Debug.Log("tileName: " + tileName);
 		foreach (SoundInfo soundInfo in soundList)
 		{
 			if (soundInfo._soundTypeName.Split('.')[0] == tileName)
