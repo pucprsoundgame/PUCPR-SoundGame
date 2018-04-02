@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class FootstepsDatabase : MonoBehaviour {
 
@@ -39,6 +40,10 @@ public class FootstepsDatabase : MonoBehaviour {
 	private string _footstepsDir;
 	private AudioSource _audioSource;
 
+	[SerializeField] private GameObject _loadingSoundsContainer;
+	[SerializeField] private Text _textloadingProgress;
+
+
 	private void Awake()
 	{
 		if (instance != null && instance != this)
@@ -46,32 +51,37 @@ public class FootstepsDatabase : MonoBehaviour {
 			Destroy(gameObject);
 		}
 
-		_audioSource = gameObject.AddComponent<AudioSource>();
-		_audioSource.spatialBlend = 0f;
-		_audioSource.playOnAwake = false;
 
-		GetFootstepsSounds();
+		_audioSource = GetComponent<AudioSource>();
 
-		DontDestroyOnLoad(gameObject);
+		if (_audioSource == null)
+		{
+			_audioSource = gameObject.AddComponent<AudioSource>();
+			_audioSource.spatialBlend = 0f;
+			_audioSource.playOnAwake = false;
+		}
+
+		StartCoroutine(LoadFootstepsSounds());
 	}
 
+
+
 	/// <summary>
-	/// Get all files and organize then on lists.
+	/// Load all footsteps sounds from folder.
 	/// </summary>
-	private void GetFootstepsSounds()
+	private IEnumerator LoadFootstepsSounds()
 	{
 		_footstepsDir = Path.Combine(Application.streamingAssetsPath, "Footsteps");
 
 		if (!Directory.Exists(_footstepsDir))
 		{
 			Directory.CreateDirectory(_footstepsDir);
-			return;
+			yield break; // coroutine equivalent of return
 		}
 		soundList = new List<SoundInfo>();
 
 		DirectoryInfo info = new DirectoryInfo(_footstepsDir);
 		FileInfo[] fileInfoList = info.GetFiles("*", SearchOption.AllDirectories);
-
 		// Foreach file in folder... 
 		foreach (FileInfo file in fileInfoList)
 		{
@@ -89,11 +99,29 @@ public class FootstepsDatabase : MonoBehaviour {
 				}
 
 				// Load a sound from folder and add it on the list.
-				StartCoroutine(LoadSound(Path.Combine(file.DirectoryName, file.Name), soundList.FirstOrDefault(s => s._soundTypeName == trimmedName)));
+				string path = Path.Combine(file.DirectoryName, file.Name);
+				WWW www = new WWW("file://" + path);
+
+				AudioClip myAudioClip = null;
+				do
+				{
+					yield return null;
+					myAudioClip = www.GetAudioClip();
+					while (myAudioClip.loadState == AudioDataLoadState.Loading)
+					{
+						_textloadingProgress.text = (www.progress * 100f).ToString("000");
+						yield return null;
+					}
+					yield return www;
+
+				} while (myAudioClip == null || myAudioClip.length == 0);
+	
+				Debug.Log("Loaded audioClip length: " + myAudioClip.length);
+				soundList.FirstOrDefault(s => s._soundTypeName == trimmedName)._sounds.Add(myAudioClip);
 			}
-			
 		}
 
+		_loadingSoundsContainer.SetActive(false);
 	}
 
 	private bool IsSoundOnList(string trimmedName)
@@ -108,17 +136,6 @@ public class FootstepsDatabase : MonoBehaviour {
 			}
 		}
 		return false;
-	}
-
-	private IEnumerator LoadSound(string path, SoundInfo listToAdd)
-	{
-		WWW www = new WWW("file://" + path);
-
-		AudioClip myAudioClip = www.GetAudioClip();
-		while (myAudioClip.loadState == AudioDataLoadState.Loading)
-			yield return www;
-
-		listToAdd._sounds.Add(myAudioClip);
 	}
 	
 	public string RemovePrefixes(string text)
@@ -148,7 +165,7 @@ public class FootstepsDatabase : MonoBehaviour {
 	public void PlayFootstepOfTile(string tileName)
 	{
 		tileName = RemovePrefixes(tileName).Split('.')[0];
-		//Debug.Log("tileName: " + tileName);
+		Debug.Log("tileName: " + tileName);
 		foreach (SoundInfo soundInfo in soundList)
 		{
 			if (soundInfo._soundTypeName.Split('.')[0] == tileName)

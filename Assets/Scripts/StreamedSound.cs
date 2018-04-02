@@ -37,16 +37,23 @@ public class StreamedSound : MonoBehaviour
 
 		WWW www = new WWW(filePath);
 
-		AudioClip myAudioClip = www.GetAudioClip();
-		while (myAudioClip.loadState != AudioDataLoadState.Loaded)
+		AudioClip myAudioClip = null;
+
+		do
 		{
-			while (myAudioClip.loadState == AudioDataLoadState.Loading)
-			{
-				yield return www;
-			}
 			myAudioClip = www.GetAudioClip();
+			while (myAudioClip.loadState != AudioDataLoadState.Loaded)
+			{
+				while (myAudioClip.loadState == AudioDataLoadState.Loading)
+				{
+					yield return www;
+				}
+				myAudioClip = www.GetAudioClip();
+				yield return null;
+			}
 			yield return null;
-		}
+
+		} while (myAudioClip == null || myAudioClip.length == 0);
 
 		_audioSource.clip = myAudioClip;
 
