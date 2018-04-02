@@ -1,4 +1,4 @@
-# Custom Sounds Game
+# Custom Sounds Game 0.3
 Jogo para estudo de sonorização. Os arquivos de som do jogo ficam em uma pasta exposta para modificação do usuário.
 
 ![screenshot](https://github.com/Chrisdbhr/CustomSoundGame/raw/master/screenshot.png)
