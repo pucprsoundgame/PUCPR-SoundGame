@@ -1,7 +1,7 @@
 # Jogo Modular 0.50
 Jogo customizável fácilmente por alunos. Alguns arquivos do jogo ficam expostos em uma pasta para modificação do usuário.
 
-## [Baixe o jogo aqui](https://github.com/Chrisdbhr/JogoModular/raw/master/Game.zip)
+[![alt text](https://github.com/Chrisdbhr/JogoModular/raw/master/botao_window.png "Baixar para Windows")](https://github.com/Chrisdbhr/JogoModular/raw/master/Game.zip)
 
 ## Instruções
 - Baixe o repositorio, descompacte, e pegue a pasta **Game**.
