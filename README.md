@@ -19,7 +19,7 @@ Jogo customizável fácilmente por alunos. Alguns arquivos do jogo ficam exposto
 
 ## Notas da versão
 
-**0.51 - 07 de agosto de 2018**
+**0.50 - 07 de agosto de 2018**
 - Incluido novas imagens no jogo.
 - Incluido código de câmera para possibilitar movimento horizontal no mapa e mapas maiores.
 
