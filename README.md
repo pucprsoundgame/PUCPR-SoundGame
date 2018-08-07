@@ -17,7 +17,7 @@ Jogo customizável fácilmente por alunos. Alguns arquivos do jogo ficam exposto
 ## Observações
 - Se você quer usar o código fonte do jogo, saiba que ele não tem foco em performance. A maneira que ele carrega o som é lenta pois os sons são carregados direto do HD, e não compilados em bundles como a Unity faz com todos os arquivos. Use apenas para estudo.
 
-## Patch Notes
+## Notas da versão
 
 **0.51 - 07 de agosto de 2018**
 - Incluido novas imagens no jogo.
