@@ -1,10 +1,10 @@
-# Custom Sounds Game 0.4
-Jogo para estudo de sonorização. Os arquivos de som do jogo ficam em uma pasta exposta para modificação do usuário.
+# Jogo Modular 0.5
+Jogo customizável fácilmente por alunos. Alguns arquivos do jogo ficam expostos em uma pasta para modificação do usuário.
 
-![screenshot](https://github.com/Chrisdbhr/CustomSoundGame/raw/master/screenshot.png)
+![screenshot](https://github.com/Chrisdbhr/JogoModular/raw/master/screenshot.png)
 
 
-## [Baixe o jogo aqui](https://github.com/Chrisdbhr/CustomSoundGame/raw/master/Game.zip)
+## [Baixe o jogo aqui](https://github.com/Chrisdbhr/JogoModular/raw/master/Game.zip)
 
 ## Instruções
 - Baixe o repositorio, descompacte, e pegue a pasta **Game**.
@@ -18,7 +18,10 @@ Jogo para estudo de sonorização. Os arquivos de som do jogo ficam em uma pasta
 - Se você quer usar o código fonte do jogo, saiba que ele não tem foco em performance. A maneira que ele carrega o som é lenta pois os sons são carregados direto do HD, e não compilados em bundles como a Unity faz com todos os arquivos. Use apenas para estudo.
 
 ## Patch Notes
-**0.4 - 14 de maio de 2018**
+**0.51 - 07 de agosto de 2018**
+- Incluido novas imagens no jogo.
+- Incluido código de câmera para possibilitar movimento horizontal no mapa e mapas maiores.
+**0.40 - 14 de maio de 2018**
 - Adicionado telas de **Menu** e **GameOver*.
 - Adicionado sons para serem customizados:
 	- Musica da tela de Menu.
