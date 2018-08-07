@@ -1,5 +1,5 @@
 # Jogo Modular 0.50
-Jogo customizável fácilmente por alunos. Alguns arquivos do jogo ficam expostos em uma pasta para modificação do usuário.
+Alguns arquivos do jogo ficam expostos em uma pasta para modificação fácil e rápida pelos alunos.
 
 [![alt text](https://github.com/Chrisdbhr/JogoModular/raw/master/botao_window.png "Baixar para Windows")](https://github.com/Chrisdbhr/JogoModular/raw/master/Builds/Game.zip)
 
