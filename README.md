@@ -1,7 +1,9 @@
 # Jogo Modular 0.50
 Alguns arquivos do jogo ficam expostos em uma pasta para modificação fácil e rápida pelos alunos.
 
-[![alt text](https://github.com/Chrisdbhr/JogoModular/raw/master/botao_window.png "Baixar para Windows")](https://github.com/Chrisdbhr/JogoModular/raw/master/Builds/Game.zip)
+[![alt text](https://github.com/Chrisdbhr/JogoModular/raw/master/botao_window.png "Baixar para Windows")](https://github.com/Chrisdbhr/JogoModular/raw/master/Builds/Windows/Windows.zip)
+[![alt text](https://github.com/Chrisdbhr/JogoModular/raw/master/botao_window.png "Baixar para Windows")](https://github.com/Chrisdbhr/JogoModular/raw/master/Builds/Windows/MAC.app.zip)
+
 
 ## Instruções
 - Baixe o repositorio, descompacte, e pegue a pasta **Game**.
