@@ -16,6 +16,7 @@ Alguns arquivos do jogo ficam expostos em uma pasta para modificação fácil e 
 
 ## Instruções (MAC)
 As instruções para MAC são semelhantes a do Windows, diferenciando na parte de descompactar onde no MAC deve ser instalado.
+A pasta **Streaming Assets** está na pasta onde o jogo é instalado: *MAC\MAC.app\Contents\Resources\Data\StreamingAssets*
 
 ## Observações
 - Se você quer usar o código fonte do jogo, saiba que ele não tem foco em performance. A maneira que ele carrega o som é lenta pois os sons são carregados direto do HD, e não compilados em bundles como a Unity faz com todos os arquivos. Use apenas para estudo.
