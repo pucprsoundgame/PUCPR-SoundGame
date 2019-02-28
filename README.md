@@ -1,3 +1,5 @@
+<a href="https://twitter.com/chrisdbhr"><img src="https://img.shields.io/twitter/follow/chrisdbhr.svg?style=social&amp;label=Follow&amp;maxAge=2592000" alt="Follow @chrisdbhr" data-pin-nopin="true"></a>
+
 # Jogo Modular
 Alguns arquivos do jogo ficam expostos em uma pasta para modificação fácil e rápida pelos alunos.
 
