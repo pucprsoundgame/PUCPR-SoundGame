@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Chris\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Chris\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_CustomSoundGame.-1701272244.00" t="ExcludeRecursive" />
+    <e p="D:\Projetos\Unity\FACULDADE\CustomSoundGame" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="AreaSound.cs" t="Include" />
+          <e p="Bullet.cs" t="Include" />
+          <e p="Camera2dFollow.cs" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="ExpandColapseEditor.cs" t="Include" />
+            <e p="PlatformerMotor2DEditor.cs" t="Include" />
+          </e>
+          <e p="FootstepsDatabase.cs" t="Include" />
+          <e p="InstantGameOver.cs" t="Include" />
+          <e p="Jukebox.cs" t="Include" />
+          <e p="Menus" t="Include">
+            <e p="GameOver.cs" t="Include" />
+            <e p="MainMenu.cs" t="Include" />
+          </e>
+          <e p="Platform" t="Include">
+            <e p="CustomTile.cs" t="Include" />
+            <e p="EasingFunctions.cs" t="Include" />
+            <e p="Globals.cs" t="Include" />
+            <e p="MovingPlatformMotor2D.cs" t="Include" />
+            <e p="PlatformerAnimation2D.cs" t="Include" />
+            <e p="PlatformerMotor2D.cs" t="Include" />
+            <e p="PlayerController2D.cs" t="Include" />
+          </e>
+          <e p="StreamedSound.cs" t="Include" />
+        </e>
+      </e>
+      <e p="CustomSoundGame.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

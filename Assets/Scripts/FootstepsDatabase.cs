@@ -61,6 +61,10 @@ public class FootstepsDatabase : MonoBehaviour {
 			_audioSource.playOnAwake = false;
 		}
 
+#if UNITY_WEBGL
+		return;
+#endif
+
 		StartCoroutine(LoadFootstepsSounds());
 	}
 
@@ -170,6 +174,7 @@ public class FootstepsDatabase : MonoBehaviour {
 		{
 			if (soundInfo._soundTypeName.Split('.')[0] == tileName)
 			{
+				_audioSource.Stop();
 				_audioSource.clip = soundInfo._sounds[UnityEngine.Random.Range(0, soundInfo._sounds.Count())];
 				_audioSource.Play();
 			}

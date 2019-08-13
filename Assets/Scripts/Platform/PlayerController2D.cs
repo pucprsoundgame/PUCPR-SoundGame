@@ -17,7 +17,7 @@ public class PlayerController2D : MonoBehaviour
 	private Animator _animator;
 
 	[SerializeField] private GameObject _bulletPrefab;
-	[SerializeField] private Transform _bulletSpawn;
+	[SerializeField] private Transform _bulletSpawnPosition;
 
 	[SerializeField] private AudioSource _jumpAudioSource;
 	[SerializeField] private AudioSource _landAudioSource;
@@ -151,7 +151,7 @@ public class PlayerController2D : MonoBehaviour
 		// Fire
 		if (Input.GetButtonDown("Fire1"))
 		{
-			GameObject createdObj = Instantiate(_bulletPrefab, _bulletSpawn.position, Quaternion.identity);
+			GameObject createdObj = Instantiate(_bulletPrefab, _bulletSpawnPosition.position, Quaternion.identity);
 			if (_motor.facingLeft)
 			{
 				createdObj.transform.localScale *= (-1);

@@ -46,6 +46,7 @@ public class Bullet : MonoBehaviour
 
 		if (_raycastHit2d.transform != null)
 		{
+			Debug.Log($"{name} collided with: {_raycastHit2d.transform.name}");
 			_colided = true;
 			_raycastHit2d.transform.SendMessage("TakeDamage", _damage, SendMessageOptions.DontRequireReceiver);
 			DestroyEffect();

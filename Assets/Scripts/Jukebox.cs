@@ -17,10 +17,14 @@ public class Jukebox : MonoBehaviour
 
 	private void Awake()
 	{
+#if UNITY_WEBGL
+		enabled = false;
+#endif
+
 		_audioSource = GetComponent<AudioSource>();
 		_healthCurrent = _healthMax;
 
-		_dir = Path.Combine(Application.streamingAssetsPath, "Jukebox");
+		_dir = Path.Combine(Application.streamingAssetsPath, "Sounds\\Musics\\JukeboxMusics");
 
 		if (!Directory.Exists(_dir))
 		{

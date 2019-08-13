@@ -11,6 +11,10 @@ public class StreamedSound : MonoBehaviour
 
 	private void Start()
 	{
+		#if	UNITY_WEBGL
+		enabled = false;
+		return;
+		#endif
 		_audioSource = GetComponent<AudioSource>();
 		string dir = Path.Combine(Application.streamingAssetsPath, "SFX");
 
