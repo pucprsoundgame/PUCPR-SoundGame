@@ -33,3 +33,4 @@ sysinfo.txt
 *.unitypackage
 .idea
 Logs
+Logs/Packages-Update.log
