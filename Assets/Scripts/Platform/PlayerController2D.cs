@@ -19,6 +19,7 @@ public class PlayerController2D : MonoBehaviour
 	[SerializeField] private GameObject _bulletPrefab;
 	[SerializeField] private Transform _bulletSpawnPosition;
 
+	[SerializeField] private AudioSource _shootAudioSource;
 	[SerializeField] private AudioSource _jumpAudioSource;
 	[SerializeField] private AudioSource _landAudioSource;
 
@@ -142,7 +143,7 @@ public class PlayerController2D : MonoBehaviour
 			_motor.Dash();
 		}
 
-		CheckSpawnBullet();
+		this.CheckSpawnBullet();
 
 	}
 
@@ -155,6 +156,11 @@ public class PlayerController2D : MonoBehaviour
 			if (_motor.facingLeft)
 			{
 				createdObj.transform.localScale *= (-1);
+			}
+
+			if (this._shootAudioSource.clip != null) {
+				this._shootAudioSource.Stop();
+				this._shootAudioSource.Play();
 			}
 		}
 

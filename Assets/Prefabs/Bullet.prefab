@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ffeedbc1e9337d438a7d1513753e4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 12
   _layerMask:
     serializedVersion: 2
     m_Bits: 257
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77845db0483fffd428254c44cb1440f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundPath: SFX/sfx_tiro
+  _soundPath: SFX/sfx_rastroDoTiro
 --- !u!82 &82830265403866976
 AudioSource:
   m_ObjectHideFlags: 0
@@ -305,11 +305,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0e17a1530dd2b8f4ba66053f626a019e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 573a5c3ff88370a4da9b9feecc29438c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
