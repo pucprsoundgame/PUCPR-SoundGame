@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77845db0483fffd428254c44cb1440f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundName: sfx_shootHit
+  _soundPath: sfx_shootHit
 --- !u!1 &1294114819154722
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77845db0483fffd428254c44cb1440f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundName: sfx_weakShoot
+  _soundPath: SFX/sfx_tiro
 --- !u!82 &82830265403866976
 AudioSource:
   m_ObjectHideFlags: 0

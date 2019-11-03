@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
 public class FootstepsDatabase : MonoBehaviour {
@@ -75,6 +74,7 @@ public class FootstepsDatabase : MonoBehaviour {
 	/// </summary>
 	private IEnumerator LoadFootstepsSounds()
 	{
+		
 		_footstepsDir = Path.Combine(Application.streamingAssetsPath, "Footsteps");
 
 		if (!Directory.Exists(_footstepsDir))
@@ -145,21 +145,21 @@ public class FootstepsDatabase : MonoBehaviour {
 	public string RemovePrefixes(string text)
 	{
 		// gambiarra da porra
-		text = text.Replace("1", "");
-		text = text.Replace("2", "");
-		text = text.Replace("3", "");
-		text = text.Replace("4", "");
-		text = text.Replace("5", "");
-		text = text.Replace("6", "");
-		text = text.Replace("7", "");
-		text = text.Replace("8", "");
-		text = text.Replace("9", "");
-		text = text.Replace("0", "");
-		return text.Replace("tile_", string.Empty)
-			.Replace("sfx_", string.Empty)
-			.Replace(@"[\d-]", string.Empty)
-			.ToLower()
-			.Trim();
+		return text.Replace("1", string.Empty)
+					.Replace("2", string.Empty)
+					.Replace("3", string.Empty)
+					.Replace("4", string.Empty)
+					.Replace("5", string.Empty)
+					.Replace("6", string.Empty)
+					.Replace("7", string.Empty)
+					.Replace("8", string.Empty)
+					.Replace("9", string.Empty)
+					.Replace("0", string.Empty)
+					.Replace("tile_", string.Empty)
+					.Replace("sfx_", string.Empty)
+					.Replace(@"[\d-]", string.Empty)
+					.ToLower()
+					.Trim();
 	}
 		
 

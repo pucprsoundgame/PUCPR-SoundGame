@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using PSG;
 using UnityEngine;
 
 public class Jukebox : MonoBehaviour
@@ -24,7 +25,7 @@ public class Jukebox : MonoBehaviour
 		_audioSource = GetComponent<AudioSource>();
 		_healthCurrent = _healthMax;
 
-		_dir = Path.Combine(Application.streamingAssetsPath, "Sounds\\Musics\\JukeboxMusics");
+		_dir = Path.Combine(PsgSettings.GetRootSoundsFolder(), "Musics\\JukeboxMusics");
 
 		if (!Directory.Exists(_dir))
 		{
