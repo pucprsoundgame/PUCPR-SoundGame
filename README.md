@@ -3,13 +3,11 @@
 # Jogo Modular
 Alguns arquivos do jogo ficam expostos em uma pasta para modificação fácil e rápida pelos alunos.
 
-[![alt text](https://github.com/pucprsoundgame/PUCPR-SoundGame/raw/master/botao_window.png "Baixar para Windows")](https://github.com/pucprsoundgame/PUCPR-SoundGame/raw/master/Builds/Windows/Windows.zip)
-[![alt text](https://github.com/pucprsoundgame/PUCPR-SoundGame/raw/master/botao_mac.png "Baixar para MAC")](https://github.com/pucprsoundgame/PUCPR-SoundGame/raw/master/Builds/MAC/MAC.app.zip)
-[![alt text](https://github.com/pucprsoundgame/PUCPR-SoundGame/raw/master/botao_jogaronline.png "Jogar online")](https://pucprsoundgame.netlify.com)
+**Download indisponível por agora**
 
 
 ## Instruções (Windows)
-- Baixe a [versão para Windows](https://github.com/pucprsoundgame/PUCPR-SoundGame/raw/master/Builds/Windows/Windows.zip) e descompacte em uma pasta.
+- Baixe a versão para Windows e descompacte em uma pasta.
 - Substitua os arquivos de som da pasta **StreamingAssets** com os que você fizer.
 - Os arquivos que tem um número no final são os que podem ter variações. Adicione quantos quiser, seguindo o padrão dos nomes.
 - A pasta **Jukebox** aceita vários arquivos de varios nomes.
