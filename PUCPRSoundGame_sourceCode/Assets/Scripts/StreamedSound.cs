@@ -1,26 +1,22 @@
 ﻿using System.Collections;
 using System.IO;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace PSG {
 	[RequireComponent(typeof(AudioSource))]
 	public class StreamedSound : MonoBehaviour {
-		[FormerlySerializedAs("_soundName")] public string _soundPath;
+		public string _soundPath;
 		private AudioSource _audioSource;
 
 		private void Start() {
 			#if UNITY_WEBGL
-			enabled = false;
+			this.enabled = false;
 			return;
 			#endif
-			_audioSource = GetComponent<AudioSource>();
+			this._audioSource = this.GetComponent<AudioSource>();
 			string dir = Path.Combine(PsgSettings.GetRootSoundsFolder(), this._soundPath);
 
-			if (!Directory.Exists(dir)) {
-				Directory.CreateDirectory(dir);
-			}
-			StartCoroutine(LoadSound(Path.Combine(dir, this._soundPath)));
+			this.StartCoroutine(this.LoadSound(dir));
 		}
 
 		private IEnumerator LoadSound(string path) {
@@ -28,7 +24,7 @@ namespace PSG {
 
 			// Stop if file doesn't exists.
 			if (!File.Exists(path + ".ogg")) {
-				Debug.Log("File at path: " + path + " does not exist.");
+				Debug.Log("File at path: " + filePath + " does not exist.");
 				yield break;
 			}
 
@@ -46,7 +42,7 @@ namespace PSG {
 					yield return null;
 				}
 				yield return null;
-			} while (myAudioClip == null || myAudioClip.length == 0);
+			} while (myAudioClip == null || myAudioClip.length <= 0);
 
 			_audioSource.clip = myAudioClip;
 

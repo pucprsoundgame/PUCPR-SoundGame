@@ -12,9 +12,9 @@ namespace PSG {
 
 		public int callbackOrder { get; }
 		public void OnPreprocessBuild(BuildReport report) {
-			var sourceDirName = Application.dataPath + "/" + PsgSettings.ROOT_SOUNDS_FOLDER_NAME;
-			var destDirName = Application.streamingAssetsPath + "/" + PsgSettings.ROOT_SOUNDS_FOLDER_NAME;
-			Directory.Move(sourceDirName, destDirName);
+			// var sourceDirName = Application.dataPath + "/" + PsgSettings.ROOT_SOUNDS_FOLDER_NAME;
+			// var destDirName = Application.streamingAssetsPath + "/" + PsgSettings.ROOT_SOUNDS_FOLDER_NAME;
+			// Directory.Move(sourceDirName, destDirName);
 		}
 	
 		[PostProcessBuild(1)]
@@ -37,12 +37,12 @@ namespace PSG {
 			
 			// PSG only
 			// move streaming assets and rename
-			Directory.Move(
-				$"{rootProjectBuildPath}{Application.productName}_Data/StreamingAssets/{PsgSettings.ROOT_SOUNDS_FOLDER_NAME}",
-				$"{rootProjectBuildPath}/{PsgSettings.ROOT_SOUNDS_FOLDER_NAME}");
-			Directory.Move(
-				$"{Application.streamingAssetsPath}/{PsgSettings.ROOT_SOUNDS_FOLDER_NAME}", 
-				$"{Application.dataPath}/{PsgSettings.ROOT_SOUNDS_FOLDER_NAME}");
+			// Directory.Move(
+			// 	$"{rootProjectBuildPath}{Application.productName}_Data/StreamingAssets/{PsgSettings.ROOT_SOUNDS_FOLDER_NAME}",
+			// 	$"{rootProjectBuildPath}/{PsgSettings.ROOT_SOUNDS_FOLDER_NAME}");
+			// Directory.Move(
+			// 	$"{Application.streamingAssetsPath}/{PsgSettings.ROOT_SOUNDS_FOLDER_NAME}", 
+			// 	$"{Application.dataPath}/{PsgSettings.ROOT_SOUNDS_FOLDER_NAME}");
 			AssetDatabase.Refresh();
 		}
 

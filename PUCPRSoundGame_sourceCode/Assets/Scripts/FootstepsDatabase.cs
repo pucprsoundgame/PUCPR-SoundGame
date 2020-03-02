@@ -75,7 +75,7 @@ public class FootstepsDatabase : MonoBehaviour {
 	private IEnumerator LoadFootstepsSounds()
 	{
 		
-		_footstepsDir = Path.Combine(Application.streamingAssetsPath, "Footsteps");
+		_footstepsDir = Path.Combine(Application.streamingAssetsPath + "/SFX", "Footsteps");
 
 		if (!Directory.Exists(_footstepsDir))
 		{

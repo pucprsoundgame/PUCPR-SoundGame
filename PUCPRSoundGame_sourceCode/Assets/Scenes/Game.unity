@@ -5103,7 +5103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77845db0483fffd428254c44cb1440f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundPath: SFX/sfx_tiro
+  _soundPath: SFX/sfx_shoot
 --- !u!82 &397896430
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5114,7 +5114,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0e17a1530dd2b8f4ba66053f626a019e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 27ebff34e324d584fb2fc9bd4102e535, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5217,7 +5217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &428330872
 Transform:
   m_ObjectHideFlags: 0
@@ -5244,7 +5244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77845db0483fffd428254c44cb1440f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundPath: sfx_land
+  _soundPath: SFX/sfx_land
 --- !u!82 &428330874
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5617,7 +5617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77845db0483fffd428254c44cb1440f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundPath: bgs_bonfire
+  _soundPath: SFX/bgs_bonfire
 --- !u!1 &467197403
 GameObject:
   m_ObjectHideFlags: 0
@@ -10494,7 +10494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77845db0483fffd428254c44cb1440f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundPath: bgs_rain
+  _soundPath: SFX/bgs_rain
 --- !u!82 &959321665
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11007,7 +11007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77845db0483fffd428254c44cb1440f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundPath: bgs_wind
+  _soundPath: SFX/bgs_wind
 --- !u!82 &1074657517
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11225,7 +11225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77845db0483fffd428254c44cb1440f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundPath: bgs_windInterior
+  _soundPath: SFX/bgs_windInterior
 --- !u!82 &1136108584
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11569,7 +11569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77845db0483fffd428254c44cb1440f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundPath: bgm_music
+  _soundPath: Musics/bgm_music
 --- !u!82 &1217708407
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11580,7 +11580,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1d97000e9c10c234d8814b5355659470, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -16610,7 +16610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77845db0483fffd428254c44cb1440f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundPath: bgs_rainInterior
+  _soundPath: SFX/bgs_rainInterior
 --- !u!82 &1635613375
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17673,7 +17673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1989247534
 Transform:
   m_ObjectHideFlags: 0
@@ -17700,7 +17700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77845db0483fffd428254c44cb1440f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundPath: sfx_jump
+  _soundPath: SFX/sfx_jump
 --- !u!82 &1989247536
 AudioSource:
   m_ObjectHideFlags: 0
