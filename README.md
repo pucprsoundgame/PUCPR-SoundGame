@@ -24,6 +24,10 @@ A pasta **Streaming Assets** está na pasta onde o jogo é instalado: *MAC\MAC.a
 
 ## Notas da versão
 
+**1.71 - 5 de maio de 2020**
+- Build na Unity 2019.4.15
+- Nova hierarquia de pastas
+
 **0.51 - 27 de fevereiro de 2019**
 - Build na Unity 2018.3.6
 - Build MAC.
