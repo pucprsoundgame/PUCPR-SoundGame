@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using PSG;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -74,12 +75,12 @@ public class FootstepsDatabase : MonoBehaviour {
 	/// </summary>
 	private IEnumerator LoadFootstepsSounds()
 	{
-		
-		_footstepsDir = Path.Combine(Application.streamingAssetsPath + "/SFX", "Footsteps");
 
-		if (!Directory.Exists(_footstepsDir))
+		this._footstepsDir = Path.Combine(PsgSettings.GetRootSoundsFolder(), "SFX");
+
+		if (!Directory.Exists(this._footstepsDir))
 		{
-			Directory.CreateDirectory(_footstepsDir);
+			Directory.CreateDirectory(this._footstepsDir);
 			yield break; // coroutine equivalent of return
 		}
 		soundList = new List<SoundInfo>();
