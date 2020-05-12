@@ -3,7 +3,7 @@
 # Jogo Modular
 Alguns arquivos do jogo ficam expostos em uma pasta para modificação fácil e rápida pelos alunos.
 
-[![alt text](https://github.com/pucprsoundgame/PUCPR-SoundGame/raw/master/botao_window.png "Baixar para Windows")](https://github.com/pucprsoundgame/PUCPR-SoundGame/raw/master/Builds/Windows/Windows.zip)
+[![alt text](https://github.com/pucprsoundgame/PUCPR-SoundGame/raw/master/botao_window.png "Baixar para Windows")](https://github.com/pucprsoundgame/PUCPR-SoundGame/raw/master/Builds/Windows/PSG.zip)
 [![alt text](https://github.com/pucprsoundgame/PUCPR-SoundGame/raw/master/botao_jogaronline.png "Jogar online")](https://pucprsoundgame.netlify.com)
 
 ## Instruções (Windows)
