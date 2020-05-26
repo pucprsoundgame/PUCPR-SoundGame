@@ -13,18 +13,16 @@ Alguns arquivos do jogo ficam expostos em uma pasta para modificação fácil e 
 - A pasta **Jukebox** aceita vários arquivos de varios nomes.
 - **Todos** os sons **devem** ser no formato **OGG**.
 
-## Instruções (MAC)
-As instruções para MAC são semelhantes a do Windows, diferenciando na parte de descompactar onde no MAC deve ser instalado.
-A pasta **Streaming Assets** está na pasta onde o jogo é instalado: *MAC\MAC.app\Contents\Resources\Data\StreamingAssets*
-
 ## Observações
 - Se você quer usar o código fonte do jogo, saiba que ele não tem foco em performance. A maneira que ele carrega o som é lenta pois os sons são carregados direto do HD, e não compilados em bundles como a Unity faz com todos os arquivos. Use apenas para estudo.
 
 ## Notas da versão
 
-**1.71 - 5 de maio de 2020**
+**1.71 - 26 de maio de 2020**
 - Build na Unity 2019.4.15
 - Nova hierarquia de pastas
+- Versão MAC removida, não é mais suportada.
+- Corrigido problema em versao web sem som.
 
 **0.51 - 27 de fevereiro de 2019**
 - Build na Unity 2018.3.6

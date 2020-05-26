@@ -10,7 +10,6 @@ namespace PSG {
 
 		private void Start() {
 			#if UNITY_WEBGL
-			this.enabled = false;
 			return;
 			#endif
 			this._audioSource = this.GetComponent<AudioSource>();

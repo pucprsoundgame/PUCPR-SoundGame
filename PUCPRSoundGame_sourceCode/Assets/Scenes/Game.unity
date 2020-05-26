@@ -5115,7 +5115,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4542b91941c320442b554fc4fa9c9f99, type: 3}
+  m_audioClip: {fileID: 8300000, guid: faa360654d0717341a17d1a242a9c90b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5502,7 +5502,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a85e9ac5939a4da458e2e8fb05253a41, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7e1bdabe92a0d1b45ac2ab94e573fc32, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -10508,7 +10508,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5321695df2f3def4abf30497481c3fa2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 73d87588ea737dc46abad1edaae8ff7a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -11573,7 +11573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77845db0483fffd428254c44cb1440f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundPath: Musicas/bgm_music
+  _soundPath: Musicas/bgm_gameplay
 --- !u!82 &1217708407
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11584,7 +11584,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: febaf86d354a6fe42b44517d5eb9b3a4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e4705a13f947d5f488a0ea31973062be, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -16625,7 +16625,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 68b977ca10d04d04fb2bb5346bc71115, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 73d87588ea737dc46abad1edaae8ff7a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -17538,16 +17538,16 @@ MonoBehaviour:
   soundList:
   - _soundTypeName: grass
     _sounds:
-    - {fileID: 8300000, guid: c6eecd0ab21f8bb4cb65d3cb8ced5b56, type: 3}
-    - {fileID: 8300000, guid: 3923d4e7f6c10ba4eaa4669ca9ee6e5e, type: 3}
-    - {fileID: 8300000, guid: 32a2fb7bc68d43546b0da2a636381ab4, type: 3}
-    - {fileID: 8300000, guid: adaeb8e821cef1e4ea63a6a8f0e5a37f, type: 3}
+    - {fileID: 8300000, guid: b8b2d7b2e6268ae4798e25b5016276f4, type: 3}
+    - {fileID: 8300000, guid: 32a83552d20a3394b994f96a8546df01, type: 3}
+    - {fileID: 8300000, guid: 38429d3eb8f407a4988907513995bcbe, type: 3}
+    - {fileID: 8300000, guid: 9aef5a44c1d326d4c9cb115d56248567, type: 3}
   - _soundTypeName: wood
     _sounds:
-    - {fileID: 8300000, guid: 109caa5f6ac62144aa1fa8091fae5f2b, type: 3}
-    - {fileID: 8300000, guid: f10525706a56a6a41872693cb21e6699, type: 3}
-    - {fileID: 8300000, guid: b7ea93a498f95bd43a9b15d66e7402e7, type: 3}
-    - {fileID: 8300000, guid: 1b0fea5f9e15c84499a0f4fa5b9c0291, type: 3}
+    - {fileID: 8300000, guid: 585b0677af332a3499375a824a2ee472, type: 3}
+    - {fileID: 8300000, guid: 99aa7dc9cd5d9ba4db2a29b9735fc10e, type: 3}
+    - {fileID: 8300000, guid: 61925d5a530c9ee479337d1211bf8a5b, type: 3}
+    - {fileID: 8300000, guid: c2520e647a06c504e96fed6b3e0169c9, type: 3}
   _loadingSoundsContainer: {fileID: 22470578}
   _textloadingProgress: {fileID: 655898269}
 --- !u!4 &1873898249
